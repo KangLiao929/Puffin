@@ -1,5 +1,5 @@
 <h1>
-  <img src="assets/website/Puffin_logo.png" alt="logo" width="60" style="vertical-align: middle; margin-right: 8px;">
+  <img src="assets/website/Puffin_logo.png" alt="logo" width="75" style="vertical-align: middle; margin-right: 8px;">
   Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation
 </h1>
 
