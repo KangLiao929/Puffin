@@ -128,3 +128,4 @@ batchscript-*
 checkpoints/
 output/
 results/
+hf_demo/

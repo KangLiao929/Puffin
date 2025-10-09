@@ -20,7 +20,7 @@
 
 ## Introduction
 
-We make the first attempt to seamlessly integrate camera geometry into a unified multimodal model, introducing a camera-centric framework to advance multimodal spatial intelligence.
+We make the first attempt to seamlessly integrate camera geometry into a unified multimodal model, introducing a camera-centric framework, <em>i.e.</em>, **Puffin**, to advance multimodal spatial intelligence.
 
 ## 📝 Changelog & News
 
