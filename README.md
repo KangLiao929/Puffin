@@ -30,7 +30,7 @@ We make the first attempt to seamlessly integrate camera geometry into a unified
 
 
 ## 🖥️ Requirements and Installation
-The code has been implemented with PyTorch 2.7.0 and CUDA 12.4.
+The code has been implemented with PyTorch 2.7.0 and CUDA 12.6.
 
 An example of installation commands is provided as follows:
 
@@ -70,20 +70,20 @@ huggingface-cli download KangLiao/Puffin  --local-dir checkpoints --repo-type mo
   <img src="assets/website/camera_generation.png" alt="logo" width="40" style="vertical-align: middle; margin-right: 8px;">
   Camera-controllable Image Generation
 </h3>
-The generate images can be obtained by text prompts and camera prompts (roll: -r, pitch: -p, vertical field-of-view: -f, all in radius) using the following command:
+
+The generated images can be obtained by text prompts and camera prompts (roll: ```-r```, pitch: ```-p```, vertical field-of-view: ```-f```, all in radius) using the following command:
 
 ```shell
 export PYTHONPATH=./:$PYTHONPATH
 python scripts/demo/generation.py configs/pipelines/stage_2_base.py \
           --checkpoint checkpoints/Puffin-Base.pth --output generation_result.jpg \
           --prompt "A streetlamp casts light on an outdoor mural with intricate floral designs and text, set against a building wall." \
-          -r -0.3939 -p 0.0277 -f 0.7595 \
+          -r -0.3939 -p 0.0277 -f 0.7595
 ```
 
 To enable the thinking mode of image generation, please simply change the settings and append ```--thinking``` flag:
 
 ```shell
-export PYTHONPATH=./:$PYTHONPATH
 python scripts/demo/generation.py configs/pipelines/stage_3_thinking.py \
           --checkpoint checkpoints/Puffin-Thinking.pth --output generation_result_thinking.jpg \
           --prompt "A streetlamp casts light on an outdoor mural with intricate floral designs and text, set against a building wall." \
@@ -96,20 +96,18 @@ python scripts/demo/generation.py configs/pipelines/stage_3_thinking.py \
   Camera Understanding
 </h3>
 
-The camera understanding results (scene description + camera parameters) can be obtained using the following command:
+The camera understanding results (scene descriptions and camera parameters) can be obtained using the following command:
 
 ```shell
-export PYTHONPATH=./:$PYTHONPATH
 python scripts/demo/understanding.py configs/pipelines/stage_2_base.py \
           --checkpoint checkpoints/Puffin-Base.pth --image_path assets/test_img/test.jpg \
           --save_dir vis_results/
 ```
-The visualization results (pixel-wise camera maps) can be found at ```--save_dir```.
+The visualization results (pixel-wise camera maps) can also be found at ```--save_dir```.
 
 Like the camera-controllable generation, the thinking mode can be enabled by changing the settings and append ```--thinking``` flag:
 
 ```shell
-export PYTHONPATH=./:$PYTHONPATH
 python scripts/demo/understanding.py configs/pipelines/stage_3_thinking.py \
           --checkpoint checkpoints/Puffin-Thinking.pth --image_path assets/test_img/test.jpg \
           --save_dir vis_results/ \
@@ -120,14 +118,14 @@ python scripts/demo/understanding.py configs/pipelines/stage_3_thinking.py \
   <img src="assets/website/world_exploration_logo.png" alt="logo" width="40" style="vertical-align: middle; margin-right: 8px;">
   World Exploration
 </h3>
-The generated target view can be obtained by an initial view and camera prompts (roll: -r, pitch: -p, yaw: -y, all in radius) using the following command:
+
+The generated target view can be obtained by an initial view and camera prompts (roll: ```-r```, pitch: ```-p```, yaw: ```-y```, all in radius) using the following command:
 
 ```shell
-export PYTHONPATH=./:$PYTHONPATH
 python scripts/demo/world_exploration.py configs/pipelines/stage_4_instruction_tuning.py \
           --checkpoint checkpoints/Puffin-Instruct.pth --init_image assets/test_img/test_cross_view.jpg \
           --output world_exploration_result.jpg \
-          -r 0.1 -p -0.1 -y 0.2 \
+          -r 0.1 -p -0.1 -y 0.2
 ```
 
 <h3>
@@ -137,7 +135,6 @@ python scripts/demo/world_exploration.py configs/pipelines/stage_4_instruction_t
 Given an initial view and the expected location (left, behind, and right), Puffin can imagine the scene description of the target view using the following command:
 
 ```shell
-export PYTHONPATH=./:$PYTHONPATH
 python scripts/demo/spatial_imagination.py configs/pipelines/stage_4_instruction_tuning.py \
           --checkpoint checkpoints/Puffin-Instruct.pth --image assets/test_img/test_cross_view.jpg \
           --location behind
@@ -150,7 +147,6 @@ python scripts/demo/spatial_imagination.py configs/pipelines/stage_4_instruction
 Puffin can suggest camera parameter adjustments from an initial view to achieve images with higher photographic aesthetics. The deviation (pitch and yaw) between the target image and initial image can be obtained using the following command:
 
 ```shell
-export PYTHONPATH=./:$PYTHONPATH
 python scripts/demo/photographic_guidance.py configs/pipelines/stage_4_instruction_tuning.py \
           --checkpoint checkpoints/Puffin-Instruct.pth --image assets/test_img/test_cross_view.jpg
 ```
@@ -164,7 +160,6 @@ python scripts/demo/photographic_guidance.py configs/pipelines/stage_4_instructi
 Datasets and benchmarks that span vision, language, and camera modalities remain scarce in the domain of spatial multimodal intelligence. To address this gap, we introduce <strong>Puffin-4M</strong>, a large-scale, high-quality dataset comprising 4 million vision-language-camera triplets. We release the training data and evaluation benchmark in 🤗 [KangLiao/Puffin-4M](https://huggingface.co/datasets/KangLiao/Puffin-4M). The whole dataset is approximately **449GB** in size. Note that we omit the camera maps from the uploaded training data due to their large total size (~3 MB each, amounting to ~11.4 TB in total). However, these maps can be easily generated from the captions using the following command:
 
 ```shell
-export PYTHONPATH=./:$PYTHONPATH
 python scripts/camera/cam_dataset.py \
           --input_root Puffin-4M/training_data/cap_folder \
           --output_root Puffin-4M/training_data/cam_folder
@@ -200,4 +195,4 @@ This project is licensed under [NTU S-Lab License 1.0](LICENSE).
 
 
 ## 🙏 Acknowledgement
-The project builds upon [OpenUni](https://github.com/wusize/OpenUni), [MetaQuery](https://github.com/facebookresearch/metaquery), and [GeoCalib](https://github.com/cvg/GeoCalib).
+The project builds upon [OpenUni](https://github.com/wusize/OpenUni), [MetaQuery](https://github.com/facebookresearch/metaquery), [Qwen2.5](https://github.com/QwenLM/Qwen2.5), [RADIOv3](https://huggingface.co/nvidia/C-RADIOv3-L), [SD3](https://huggingface.co/stabilityai/stable-diffusion-3-medium), and [GeoCalib](https://github.com/cvg/GeoCalib).
