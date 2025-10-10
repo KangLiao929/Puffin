@@ -7,7 +7,7 @@
   <img src="assets/website/tesear_horizon.png" alt="Thinking with Camera" width="100%">
 </p>
 
-> **[Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation](https://arxiv.org/abs/)**
+> **[Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation](documents/Puffin_paper.pdf)**
 >
 > [Kang Liao](https://kangliao929.github.io/), [Size Wu](https://wusize.github.io/), [Zhonghua Wu](https://wu-zhonghua.github.io/), [Linyi Jin](https://jinlinyi.github.io/), [Chao Wang](https://hans1984.github.io/), [Yikai Wang](https://yikai-wang.github.io/), [Fei Wang](https://scholar.google.com/citations?user=ljt16JkAAAAJ&hl), [Wei Li](https://weivision.github.io/), [Chen Change Loy](https://www.mmlab-ntu.com/person/ccloy/index.html)
 
