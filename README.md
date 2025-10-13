@@ -7,12 +7,12 @@
   <img src="assets/website/tesear_horizon.png" alt="Thinking with Camera" width="100%">
 </p>
 
-> **[Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation](documents/Puffin_paper.pdf)**
+> **[Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation](https://arxiv.org/abs/2510.08673)**
 >
 > [Kang Liao](https://kangliao929.github.io/), [Size Wu](https://wusize.github.io/), [Zhonghua Wu](https://wu-zhonghua.github.io/), [Linyi Jin](https://jinlinyi.github.io/), [Chao Wang](https://hans1984.github.io/), [Yikai Wang](https://yikai-wang.github.io/), [Fei Wang](https://scholar.google.com/citations?user=ljt16JkAAAAJ&hl), [Wei Li](https://weivision.github.io/), [Chen Change Loy](https://www.mmlab-ntu.com/person/ccloy/index.html)
 
 >
-> [![arXiv](https://img.shields.io/badge/arXiv-2510.10777-b31b1b.svg)](documents/Puffin_paper.pdf)
+> [![arXiv](https://img.shields.io/badge/arXiv-2510.08673-b31b1b.svg)](https://arxiv.org/abs/2510.08673)
 > [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://kangliao929.github.io/projects/puffin/)
 > [![Puffin Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-orange)](https://huggingface.co/KangLiao/Puffin)
 > [![Puffin-4M Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-orange)](https://huggingface.co/datasets/KangLiao/Puffin-4M)
@@ -185,7 +185,7 @@ If you find Puffin useful for your research or applications, please cite our pap
   @article{liao2025puffin,
     title={Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation},
     author={Liao, Kang and Wu, Size and Wu, Zhonghua and Jin, Linyi and Wang, Chao and Wang, Yikai and Wang, Fei and Li, Wei and Loy, Chen Change},
-    journal={arXiv preprint arXiv:2510.10777},
+    journal={arXiv preprint arXiv:2510.08673},
     year={2025}
   }
 ```
