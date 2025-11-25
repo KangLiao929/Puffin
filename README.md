@@ -128,6 +128,15 @@ python scripts/demo/world_exploration.py configs/pipelines/stage_4_instruction_t
           -r 0.1 -p -0.1 -y 0.2
 ```
 
+The above process can be applied to the 3D world generation (*e.g.*, Figure A8 in the paper) like world models, the multi-view results are generated around an initial view:
+
+```shell
+python scripts/demo/world_exploration_3D.py configs/pipelines/stage_4_instruction_tuning.py \
+          --checkpoint checkpoints/Puffin-Instruct.pth --init_view_path assets/test_img/ \
+          --output world_exploration_3D/
+```
+
+
 <h3>
   <img src="assets/website/spatial_imagination_logo.png" alt="logo" width="40" style="vertical-align: middle; margin-right: 8px;">
   Spatial Imagination
