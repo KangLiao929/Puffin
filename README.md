@@ -25,7 +25,8 @@ We make the first attempt to seamlessly integrate camera geometry into a unified
 ## 📝 Changelog & News
 
 - [x] 2025.10.10: The paper, project page, code, model, dataset, and demo of Puffin are online.
-- [ ] Release the scripts of the dataset construction pipeline and camera-centric evaluation.
+- [x] 2026.01.10: The scripts of the camera-centric evaluation has been released.
+- [ ] Release the scripts of the dataset construction pipeline.
 - [ ] Release the camera caption (by our method) of the commonly used large-scale text-to-image datasets, such as megalith-10m.
 
 
