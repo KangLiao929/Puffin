@@ -23,9 +23,10 @@
 We make the first attempt to seamlessly integrate camera geometry into a unified multimodal model, introducing a camera-centric framework, <em>i.e.</em>, **Puffin**, to advance multimodal spatial intelligence.
 
 ## 📝 Changelog & News
-
-- [x] 2025.10.10: The paper, project page, code, model, dataset, and demo of Puffin are online.
+- [x] 2026.01.26: Puffin has been accepted at ICLR 2026.
+- [x] 2026.01.15: Puffin-4M dataset reached 20,000 downloads on Hugging Face within three months of release.
 - [x] 2026.01.10: The scripts of the camera-centric evaluation has been released.
+- [x] 2025.10.10: The paper, project page, code, model, dataset, and demo of Puffin are online.
 - [ ] Release the scripts of the dataset construction pipeline.
 - [ ] Release the camera caption (by our method) of the commonly used large-scale text-to-image datasets, such as megalith-10m.
 
