@@ -1,6 +1,6 @@
 <h1>
   <img src="assets/website/Puffin_logo.png" alt="logo" width="65" style="vertical-align: middle; margin-right: 8px;">
-  Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation
+  Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding and Generation (ICLR 2026)
 </h1>
 
 <p align="center">
