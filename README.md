@@ -19,8 +19,8 @@
 > [![Demo](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/KangLiao/Puffin)
 
 ## Introduction
+We introduce **Puffin**, a camera-centric unified multimodal model designed to advance spatial intelligence, which enables the generation and understanding of the world from arbitrary viewpoints and orientations simultaneously.
 
-We make the first attempt to seamlessly integrate camera geometry into a unified multimodal model, introducing a camera-centric framework, <em>i.e.</em>, **Puffin**, to advance multimodal spatial intelligence.
 
 ## 📝 Changelog & News
 - [x] 2026.01.26: Puffin has been accepted at ICLR 2026.
