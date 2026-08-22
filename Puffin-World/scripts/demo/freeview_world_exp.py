@@ -349,7 +349,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--config', default=(
         'configs/pipelines/'
-        'local_final_stage_4_world_all_asym_attn_qwen2_5_1_5b_radiov4H_'
+        'final_stage_4_world_all_asym_attn_qwen2_5_1_5b_radiov4H_'
         'sd3p5L.py'))
     p.add_argument('--checkpoint', required=True,
                    help='MERGED und+gen weight (merge_und_gen_ckpt.py).')
