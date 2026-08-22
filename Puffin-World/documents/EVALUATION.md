@@ -102,20 +102,6 @@ vFoV, and (with `--advance_metrics`) the perspective-field metrics (up-vector,
 gravity, and latitude). A `summary_metrics.txt` is written per dataset. The GT
 CSV (`images.csv`) has columns `fname, roll, pitch, vfov, [k1], width, height`.
 
-### One-shot runner
-
-`scripts/skill/und_eval/run_und_eval.sh` performs both phases (and the conda-env
-switch) for all benchmarks:
-
-```bash
-EXP_NAME=<EXP_NAME> bash scripts/skill/und_eval/run_und_eval.sh
-```
-
-It auto-detects the checkpoint (`model.pth`, else the latest `iter_*.pth`) and
-iterates over `DATASETS` (default `tartanair stanford2d3d megadepth2k lamar2k`).
-Override via env vars: `CKPT`, `DATASETS`, `DATA_ROOT`, `BATCH_SIZE`,
-`IMAGE_SIZE`, `THRESHOLDS`, `ADVANCE_METRICS`, `PHASE` (`all`|`und`|`eval`).
-
 ### Benchmarks
 
 We evaluate on four public benchmarks, each laid out as
@@ -183,18 +169,6 @@ image and comparing it to the **target** camera used for generation:
    median angular errors of the **up-vector**, **gravity**, and **latitude** maps.
 3. Report **FID** against the reference distribution to assess visual fidelity and
    realism.
-
-### One-shot runner
-
-`scripts/skill/eval_upload/run_gen.sh` generates images for the latest N
-checkpoints (and optionally uploads results):
-
-```bash
-EXP_NAME=<EXP_NAME> NUM=-1 bash scripts/skill/eval_upload/run_gen.sh
-```
-
-Key env vars: `NUM` (# prompts, `-1` = all), `NUM_CKPT`, `CFG_SCALE` (`4.5`),
-`NUM_STEPS` (`50`), `SEED` (`42`), `PROMPT_PATH`, `DO_UPLOAD`.
 
 ---
 
