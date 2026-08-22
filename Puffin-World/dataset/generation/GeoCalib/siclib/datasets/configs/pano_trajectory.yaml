@@ -1,0 +1,26 @@
+name: 360swiss_8
+base_dir: /mnt/afs_100t/NTU_slab/kliao/data/360_dataset
+pano_train: "${.base_dir}/${.name}"
+out_dir: /mnt/afs_100t/NTU_slab/kliao/data/Puffin2/Trajectory_test
+
+# Trajectory sampling
+num_panos: null             # if set to an int N, randomly pick N panos (seeded by `seed`); null = use all
+segments_per_pano: 8        # used only when segments_per_motion_type is null
+segments_per_motion_type: 8 # if set to int M, generate M segments for EACH of pitch/roll/yaw (3*M total); null = random motion per segment
+images_per_segment: 90      # N frames per segment
+angle_step_deg: 1.0         # angular step between consecutive frames (deg)
+vfov_min_deg: 60.0          # vertical FoV random range lower bound (deg)
+vfov_max_deg: 100.0          # vertical FoV random range upper bound (deg)
+image_height: 640
+image_width: 640
+camera_model: pinhole
+
+# Video
+save_video: false            # save each segment as <segment>.mp4
+video_fps: 30
+
+# Runtime
+seed: 0
+n_gpus: 1                      # number of GPUs, auto-assigns cuda:0..n-1
+workers_per_gpu: 4             # concurrent panos per GPU
+overwrite: true

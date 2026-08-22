@@ -22,15 +22,6 @@
 We introduce **Puffin**, a camera-centric unified multimodal model designed to advance spatial intelligence, which enables the generation and understanding of the world from arbitrary viewpoints and orientations simultaneously.
 
 
-## 📝 Changelog & News
-- [x] 2026.01.26: Puffin has been accepted at ICLR 2026.
-- [x] 2026.01.15: Puffin-4M dataset reached 20,000 downloads on Hugging Face within three months of release.
-- [x] 2026.01.10: The scripts of the camera-centric evaluation has been released.
-- [x] 2025.10.10: The paper, project page, code, model, dataset, and demo of Puffin are online.
-- [ ] Release the scripts of the dataset construction pipeline.
-- [ ] Release the camera caption (by our method) of the commonly used large-scale text-to-image datasets, such as megalith-10m.
-
-
 ## 🖥️ Requirements and Installation
 The code has been implemented with PyTorch 2.7.0 and CUDA 12.6.
 
@@ -39,7 +30,7 @@ An example of installation commands is provided as follows:
 ```
 # git clone this repository
 git clone https://github.com/KangLiao929/Puffin
-cd Puffin
+cd Puffin/Puffin
 
 # create new anaconda env
 conda create -n Puffin python=3.10
@@ -202,7 +193,7 @@ If you find Puffin useful for your research or applications, please cite our pap
 ```
 
 ## 🗞️ License
-This project is licensed under [NTU S-Lab License 1.0](LICENSE).
+This project is licensed under [NTU S-Lab License 1.0](../LICENSE).
 
 
 ## 🙏 Acknowledgement

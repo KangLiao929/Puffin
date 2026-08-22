@@ -1,0 +1,43 @@
+name: realsee
+base_dir: D:/pano
+save_dir: D:/pano/perspective_dataset_realsee
+pano_train: "${.base_dir}/${.name}"
+images_per_pano: 8
+n_workers: 1
+device: cpu #cuda:0
+overwrite: true
+resize_factor: null
+camera_model: simple_radial #simple_radial # Ensure this matches your siclib camera_models key
+
+parameter_dists:
+  roll:
+    type: uniform
+    options:
+      loc: -0.7853981633974483 # -45 degrees
+      scale: 1.5707963267948966 # 90 degrees
+  pitch:
+    type: uniform
+    options:
+      loc: -0.7853981633974483 # -45 degrees
+      scale: 1.5707963267948966 # 90 degrees
+  vfov:
+    type: uniform
+    options:
+      loc: 0.3490658503988659 # 20 degrees
+      scale: 1.48352986419518 # 85 degrees
+  k1_hat:
+    type: truncnorm
+    prob: 0.9
+    options:
+      a: -4.285714285714286
+      b: 4.285714285714286
+      loc: 0
+      scale: 0.15
+  resize_factor:
+    type: uniform
+    options:
+      loc: 1.2
+      scale: 0.5
+  shape:
+    type: custom_resolution_640
+    options: {}

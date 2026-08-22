@@ -1,0 +1,36 @@
+name: AdobeStock
+base_dir: /mnt/afs_100t/NTU_slab/kliao/data/360_dataset/
+save_dir: /mnt/afs_100t/NTU_slab/kliao/data/Puffin-Pro/Projection_test/
+pano_train: "${.base_dir}/${.name}"
+num_panos: 1000              # int N -> randomly pick N panos (seeded by `seed`); null = use all
+seed: 0                       # only used for the pano sub-sampling above
+images_per_pano: 1
+resize_factor: null
+n_workers: 4
+device: cuda:0
+overwrite: true
+
+parameter_dists:
+  roll:
+    type: uniform # uni[-45, 45] 
+    options:
+      loc:  -0.7853981633974483 # -45 degrees
+      scale: 1.5707963267948966 # 90 degrees
+  pitch:
+    type: uniform # uni[-45, 45]
+    options:
+      loc: -0.7853981633974483 # -45 degrees
+      scale: 1.5707963267948966 # 90 degrees
+  vfov:
+    type: uniform # uni[20, 105]
+    options:
+      loc: 0.3490658503988659 # 20 degrees
+      scale:  1.48352986419518 # 85 degrees
+  resize_factor:
+    type: uniform
+    options:
+      loc: 1.2
+      scale: 0.5
+  shape:
+    type: custom_resolution_640
+    options: {}
