@@ -15,6 +15,7 @@ Each release lives in its own subdirectory of this repository:
 
 ## 📝 Changelog & News
 
+- [x] 2026.08.23: The model weights of **Puffin-World** (Base / Pro / Caption) are released on [Hugging Face](https://huggingface.co/KangLiao/Puffin-World).
 - [x] 2026.08.22: The training and evaluation code of **Puffin-World** is released.
 - [x] 2026.01.26: Puffin has been accepted at ICLR 2026.
 - [x] 2026.01.15: Puffin-4M dataset reached 20,000 downloads on Hugging Face within three months of release.
@@ -28,7 +29,7 @@ Each release lives in its own subdirectory of this repository:
 | Project | Paper | Project Page | Model | Dataset | Code |
 |---|---|---|---|---|---|
 | **Puffin**<br>*Thinking with Camera* | [arXiv:2510.08673](https://arxiv.org/abs/2510.08673)<br>(ICLR 2026) | [Page](https://kangliao929.github.io/projects/puffin/) | [🤗 KangLiao/Puffin](https://huggingface.co/KangLiao/Puffin) | [🤗 Puffin-4M](https://huggingface.co/datasets/KangLiao/Puffin-4M) | [`Puffin/`](Puffin/) |
-| **Puffin-World**<br>*Native 3D World States* | Coming soon | [Page](https://kangliao929.github.io/projects/puffin-world/) | Coming soon | [🤗 Puffin-16M](https://huggingface.co/datasets/KangLiao/Puffin-16M) | [`Puffin-World/`](Puffin-World/) |
+| **Puffin-World**<br>*Native 3D World States* | Coming soon | [Page](https://kangliao929.github.io/projects/puffin-world/) | [🤗 KangLiao/Puffin-World](https://huggingface.co/KangLiao/Puffin-World) | [🤗 Puffin-16M](https://huggingface.co/datasets/KangLiao/Puffin-16M) | [`Puffin-World/`](Puffin-World/) |
 
 ## 🗞️ License
 

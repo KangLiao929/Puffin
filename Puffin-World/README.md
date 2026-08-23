@@ -9,9 +9,9 @@
 
 >
 > [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://kangliao929.github.io/projects/puffin-world/)
+> [![Puffin-World Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-orange)](https://huggingface.co/KangLiao/Puffin-World)
 > [![Puffin-16M Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Puffin--16M-orange)](https://huggingface.co/datasets/KangLiao/Puffin-16M)
 > [![Eval Results](https://img.shields.io/badge/🤗%20Hugging%20Face-Eval%20Results-blue)](https://huggingface.co/datasets/KangLiao/Puffin)
-> [![Weights Backup](https://img.shields.io/badge/🤗%20Hugging%20Face-Weights-green)](https://huggingface.co/KangLiao/Puffin-World-Model-backup)
 
 ## Introduction
 
@@ -168,14 +168,25 @@ held-out benchmarks `Puffin-Cam-15M-Bench` and `Puffin-Traj-1M-Bench`:
 
 ## 📦 Data & Weights
 
+We release three model variants in 🤗 [KangLiao/Puffin-World](https://huggingface.co/KangLiao/Puffin-World):
+
+| Checkpoint | LLM | Vision encoder | Purpose |
+|---|---|---|---|
+| `Puffin-World-Base.pth` | Qwen2.5-7B | C-RADIOv3-H | unified world modeling |
+| `Puffin-World-Pro.pth` | Qwen2.5-1.5B | C-RADIOv4-H | unified world modeling |
+| `Puffin-World-Caption.pth` | Qwen3.5-0.8B | C-RADIOv3-H | understanding-only (captioning) |
+
+It is recommended to use the following command to download the checkpoints:
+
+```bash
+# pip install -U "huggingface_hub[cli]"
+huggingface-cli download KangLiao/Puffin-World --local-dir checkpoints --repo-type model
+```
+
 - **Puffin-16M** (+ held-out `Puffin-Cam-15M-Bench`, `Puffin-Traj-1M-Bench`):
   [KangLiao/Puffin-16M](https://huggingface.co/datasets/KangLiao/Puffin-16M)
 - Evaluation outputs (per-iteration, per-sample):
   [KangLiao/Puffin](https://huggingface.co/datasets/KangLiao/Puffin)
-- Merged weights & rolling latest conversions:
-  [KangLiao/Puffin-World-Model-backup](https://huggingface.co/KangLiao/Puffin-World-Model-backup)
-  — note: the 7b asym `model_itr*.pth` holds only the ~2.4B trainable
-  params and must be paired with its config's `pretrained_pth` chain.
 
 ## 📚 Citation
 
