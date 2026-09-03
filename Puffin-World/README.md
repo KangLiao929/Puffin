@@ -10,7 +10,7 @@
 >
 > [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://kangliao929.github.io/projects/puffin-world/)
 > [![Puffin-World Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-orange)](https://huggingface.co/KangLiao/Puffin-World)
-> [![Puffin-16M Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Puffin--16M-orange)](https://huggingface.co/datasets/KangLiao/Puffin-16M)
+> [![Puffin-16M Dataset](https://img.shields.io/badge/Dataset-Puffin--16M-orange)](https://kangliao929.github.io/projects/puffin-16m/)
 > [![Hugging Face Blog](https://img.shields.io/badge/🤗%20Hugging%20Face-Blog-blue)](https://huggingface.co/blog/KangLiao/puffin-world)
 
 ## Introduction
@@ -31,8 +31,7 @@ A single integrated framework of vision encoder, LLM, and diffusion model suppor
 camera-to-world understanding from a single image, camera-controllable
 text-to-image generation, image- and text-to-3D world generation, challenging
 camera trajectories, and native geometry prediction with 3D reconstruction — all
-without external offline perception or reconstruction modules. Built on
-[Puffin](https://github.com/KangLiao929/Puffin) (*Thinking with Camera*, ICLR 2026).
+without external offline perception or reconstruction modules.
 
 ## 🖥️ Requirements and Installation
 
