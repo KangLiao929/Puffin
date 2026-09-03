@@ -1,12 +1,17 @@
 <h1>
   <img src="Puffin/assets/website/Puffin_logo.png" alt="logo" width="65" style="vertical-align: middle; margin-right: 8px;">
-  Puffin: Camera-Centric Unified Multimodal Models
+  Puffin Series: Towards Unified Multimodal 3D World Models
 </h1>
 
-**Puffin** is a series of camera-centric unified multimodal models for spatial
-intelligence, unifying understanding and generation of the world across
-viewpoints, orientations, and — with Puffin-World — native 3D world states.
-Each release lives in its own subdirectory of this repository:
+**Puffin** is a series of unified multimodal models advancing toward 3D world
+modeling. It starts from camera-centric spatial intelligence — understanding
+and generating the world from arbitrary viewpoints and orientations — and
+scales to a world model that represents worlds through three complementary
+native 3D world states (**physics**, **geometry**, and **appearance**),
+supporting camera-to-world understanding, camera-controllable generation, and
+image-/text-to-3D world generation without external perception or
+reconstruction modules. Each release lives in its own subdirectory of this
+repository:
 
 - [**`Puffin/`**](Puffin/) — *Thinking with Camera: A Unified Multimodal Model
   for Camera-Centric Understanding and Generation* (ICLR 2026)
