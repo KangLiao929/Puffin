@@ -238,8 +238,6 @@ huggingface-cli download KangLiao/Puffin-World --local-dir checkpoints --repo-ty
 
 - **Puffin-16M** (+ held-out `Puffin-Cam-15M-Bench`, `Puffin-Traj-1M-Bench`):
   [KangLiao/Puffin-16M](https://huggingface.co/datasets/KangLiao/Puffin-16M)
-- Evaluation outputs (per-iteration, per-sample):
-  [KangLiao/Puffin](https://huggingface.co/datasets/KangLiao/Puffin)
 
 ## 📚 Citation
 

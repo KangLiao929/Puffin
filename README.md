@@ -14,20 +14,29 @@ reconstruction modules. Each release lives in its own subdirectory of this
 repository:
 
 - [**`Puffin/`**](Puffin/) — *Thinking with Camera: A Unified Multimodal Model
-  for Camera-Centric Understanding and Generation* (ICLR 2026)
+  for Camera-Centric Understanding and Generation* (ICLR 2026)<br>
+  [![arXiv](https://img.shields.io/badge/arXiv-2510.08673-b31b1b.svg)](https://arxiv.org/abs/2510.08673)
+  [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://kangliao929.github.io/projects/puffin/)
+  [![Puffin Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-orange)](https://huggingface.co/KangLiao/Puffin)
+  [![Puffin-4M Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-orange)](https://huggingface.co/datasets/KangLiao/Puffin-4M)
+  [![Demo](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/KangLiao/Puffin)
 - [**`Puffin-World/`**](Puffin-World/) — *Puffin-World: Scaling a Unified
-  Multimodal Model with Native 3D World States* (2026)
+  Multimodal Model with Native 3D World States* (2026)<br>
+  [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://kangliao929.github.io/projects/puffin-world/)
+  [![Puffin-World Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-orange)](https://huggingface.co/KangLiao/Puffin-World)
+  [![Puffin-16M Dataset](https://img.shields.io/badge/Dataset-Puffin--16M-orange)](https://kangliao929.github.io/projects/puffin-16m/)
+  [![Hugging Face Blog](https://img.shields.io/badge/🤗%20Hugging%20Face-Blog-blue)](https://huggingface.co/blog/KangLiao/puffin-world)
 
 ## 📝 Changelog & News
 
 - [x] 2026.08.23: The model weights of **Puffin-World** (Base / Pro / Caption) are released on [Hugging Face](https://huggingface.co/KangLiao/Puffin-World).
+- [x] 2026.08.23: The scripts of the dataset construction pipeline have been released.
+- [x] 2026.08.23: The camera captions (by our method) of the commonly used large-scale text-to-image datasets, such as megalith-10m, have been released.
 - [x] 2026.08.22: The training and evaluation code of **Puffin-World** is released.
 - [x] 2026.01.26: Puffin has been accepted at ICLR 2026.
 - [x] 2026.01.15: Puffin-4M dataset reached 20,000 downloads on Hugging Face within three months of release.
 - [x] 2026.01.10: The scripts of the camera-centric evaluation has been released.
 - [x] 2025.10.10: The paper, project page, code, model, dataset, and demo of Puffin are online.
-- [ ] Release the scripts of the dataset construction pipeline.
-- [ ] Release the camera caption (by our method) of the commonly used large-scale text-to-image datasets, such as megalith-10m.
 
 ## 📖 Overview
 
