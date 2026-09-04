@@ -28,6 +28,10 @@ repository:
   [![Puffin-16M Dataset](https://img.shields.io/badge/Dataset-Puffin--16M-orange)](https://kangliao929.github.io/projects/puffin-16m/)
   [![Hugging Face Blog](https://img.shields.io/badge/🤗%20Hugging%20Face-Blog-blue)](https://huggingface.co/blog/KangLiao/puffin-world)
 
+<p align="center">
+  <img src="assets/puffin-world-demo.webp" alt="Puffin-World demo" width="100%">
+</p>
+
 ## 📝 Changelog & News
 
 - [x] 2026.09.04: The paper of **Puffin-World** is released on [arXiv](https://arxiv.org/abs/2609.04196).
