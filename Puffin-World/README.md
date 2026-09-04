@@ -3,11 +3,12 @@
   Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States
 </h1>
 
-> **[Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States](https://kangliao929.github.io/projects/puffin-world/)**
+> **[Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States](https://arxiv.org/abs/2609.04196)**
 >
 > [Kang Liao](https://kangliao929.github.io/), [Yihang Luo](https://yihangluo.com/), [Xiao-Ming Wu](https://dravenalg.github.io/), [Linyi Jin](https://jinlinyi.github.io/), [Size Wu](https://wusize.github.io/), [Chunyu Lin](https://scholar.google.com/citations?user=t8xkhscAAAAJ&hl=en), [Yao Zhao](https://scholar.google.com/citations?user=lO5VIncAAAAJ&hl=en), [Fei Wang](https://scholar.google.com/citations?user=ljt16JkAAAAJ&hl=en), [Wei Li](https://weivision.github.io/), [Chen Change Loy](https://www.mmlab-ntu.com/person/ccloy/)
 
 >
+> [![arXiv](https://img.shields.io/badge/arXiv-2609.04196-b31b1b.svg)](https://arxiv.org/abs/2609.04196)
 > [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://kangliao929.github.io/projects/puffin-world/)
 > [![Puffin-World Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-orange)](https://huggingface.co/KangLiao/Puffin-World)
 > [![Puffin-16M Dataset](https://img.shields.io/badge/Dataset-Puffin--16M-orange)](https://kangliao929.github.io/projects/puffin-16m/)
@@ -246,10 +247,10 @@ our papers using the following BibTeX:
 
 ```bibtex
 @article{liao2026puffinworld,
-  title   = {Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States},
-  author  = {Liao, Kang and Luo, Yihang and Wu, Xiao-Ming and Jin, Linyi and Wu, Size and Lin, Chunyu and Zhao, Yao and Wang, Fei and Li, Wei and Loy, Chen Change},
-  journal = {Preprint},
-  year    = {2026}
+  title={Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States},
+  author={Liao, Kang and Luo, Yihang and Wu, Xiao-Ming and Jin, Linyi and Wu, Size and Lin, Chunyu and Zhao, Yao and Wang, Fei and Li, Wei and Loy, Chen Change},
+  journal={arXiv preprint arXiv:2609.04196},
+  year={2026}
 }
 
 @article{liao2025puffin,

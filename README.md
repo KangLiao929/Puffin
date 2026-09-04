@@ -22,6 +22,7 @@ repository:
   [![Demo](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/KangLiao/Puffin)
 - [**`Puffin-World/`**](Puffin-World/) — *Puffin-World: Scaling a Unified
   Multimodal Model with Native 3D World States* (2026)<br>
+  [![arXiv](https://img.shields.io/badge/arXiv-2609.04196-b31b1b.svg)](https://arxiv.org/abs/2609.04196)
   [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://kangliao929.github.io/projects/puffin-world/)
   [![Puffin-World Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-orange)](https://huggingface.co/KangLiao/Puffin-World)
   [![Puffin-16M Dataset](https://img.shields.io/badge/Dataset-Puffin--16M-orange)](https://kangliao929.github.io/projects/puffin-16m/)
@@ -29,6 +30,7 @@ repository:
 
 ## 📝 Changelog & News
 
+- [x] 2026.09.04: The paper of **Puffin-World** is released on [arXiv](https://arxiv.org/abs/2609.04196).
 - [x] 2026.08.23: The model weights of **Puffin-World** (Base / Pro / Caption) are released on [Hugging Face](https://huggingface.co/KangLiao/Puffin-World).
 - [x] 2026.08.23: The scripts of the dataset construction pipeline have been released.
 - [x] 2026.08.23: The camera captions (by our method) of the commonly used large-scale text-to-image datasets, such as megalith-10m, have been released.
@@ -43,7 +45,7 @@ repository:
 | Project | Paper | Project Page | Model | Dataset | Code |
 |---|---|---|---|---|---|
 | **Puffin**<br>*Thinking with Camera* | [arXiv:2510.08673](https://arxiv.org/abs/2510.08673)<br>(ICLR 2026) | [Page](https://kangliao929.github.io/projects/puffin/) | [🤗 KangLiao/Puffin](https://huggingface.co/KangLiao/Puffin) | [🤗 Puffin-4M](https://huggingface.co/datasets/KangLiao/Puffin-4M) | [`Puffin/`](Puffin/) |
-| **Puffin-World**<br>*Native 3D World States* | Coming soon | [Page](https://kangliao929.github.io/projects/puffin-world/) | [🤗 KangLiao/Puffin-World](https://huggingface.co/KangLiao/Puffin-World) | [🤗 Puffin-16M](https://huggingface.co/datasets/KangLiao/Puffin-16M) | [`Puffin-World/`](Puffin-World/) |
+| **Puffin-World**<br>*Native 3D World States* | [arXiv:2609.04196](https://arxiv.org/abs/2609.04196) | [Page](https://kangliao929.github.io/projects/puffin-world/) | [🤗 KangLiao/Puffin-World](https://huggingface.co/KangLiao/Puffin-World) | [🤗 Puffin-16M](https://huggingface.co/datasets/KangLiao/Puffin-16M) | [`Puffin-World/`](Puffin-World/) |
 
 ## 🗞️ License
 
@@ -63,9 +65,9 @@ papers using the following BibTeX:
 }
 
 @article{liao2026puffinworld,
-  title   = {Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States},
-  author  = {Liao, Kang and Luo, Yihang and Wu, Xiao-Ming and Jin, Linyi and Wu, Size and Lin, Chunyu and Zhao, Yao and Wang, Fei and Li, Wei and Loy, Chen Change},
-  journal = {Preprint},
-  year    = {2026}
+  title={Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States},
+  author={Liao, Kang and Luo, Yihang and Wu, Xiao-Ming and Jin, Linyi and Wu, Size and Lin, Chunyu and Zhao, Yao and Wang, Fei and Li, Wei and Loy, Chen Change},
+  journal={arXiv preprint arXiv:2609.04196},
+  year={2026}
 }
 ```
